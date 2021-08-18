@@ -28,6 +28,7 @@ import {
   MAT_SNACK_BAR_DEFAULT_OPTIONS,
   MatSnackBarModule,
 } from '@angular/material/snack-bar';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -58,6 +59,7 @@ import {
     MatChipsModule,
     MatTooltipModule,
     MatSnackBarModule,
+    FlexLayoutModule,
   ],
   providers: [
     {

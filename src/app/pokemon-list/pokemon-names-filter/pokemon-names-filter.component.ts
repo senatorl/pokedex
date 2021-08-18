@@ -22,7 +22,7 @@ export class PokemonNamesFilterComponent implements OnInit, OnDestroy {
     this.name$ = this.nameChanged
       .pipe(debounceTime(300), distinctUntilChanged())
       .subscribe((newName) => {
-        this.PokemonService.getAllFilteredByName(newName);
+        this.PokemonService.getAllFilteredByName(newName.toLowerCase());
       });
   }
 

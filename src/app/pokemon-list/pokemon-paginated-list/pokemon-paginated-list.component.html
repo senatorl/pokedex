@@ -1,17 +1,28 @@
 <div *ngIf="pokemonListStoreService.Pokemon$ | async as pokemonList">
-  <mat-grid-list [cols]="gridCols" rowHeight="3:1">
-    <section *ngIf="pokemonList.length === 0" class="no-pokemons">
-      <div class="no-pokemons-image"></div>
-      <h2>Sorry, we coudn't find such Pokemon :(</h2>
-    </section>
-    <mat-grid-tile
-      *ngFor="let pokemon of pokemonList | slice: sliceStart:sliceEnd"
+  <section *ngIf="pokemonList.length === 0" class="no-pokemons">
+    <div class="no-pokemons-image"></div>
+    <h2>Sorry, we coudn't find such Pokemon :(</h2>
+  </section>
+  <div class="fx-container">
+    <div
+      fxLayout="column"
+      fxLayout.gt-md="row wrap"
+      fxLayoutAlign="start center"
+      fxLayoutGap.gt-sm="16px grid"
+      fxLayoutGap="16px"
     >
-      <app-pokemon-item [pokemonName]="pokemon?.name"></app-pokemon-item>
-    </mat-grid-tile>
-  </mat-grid-list>
+      <div
+        fxFlex.gt-sm="25%"
+        fxFlex="100%"
+        *ngFor="let pokemon of pokemonList | slice: sliceStart:sliceEnd"
+      >
+        <app-pokemon-item [pokemonName]="pokemon.name"></app-pokemon-item>
+      </div>
+    </div>
+  </div>
   <mat-paginator
     [length]="pokemonList.length"
+    class="mat-elevation-z5"
     [pageSize]="pageSize"
     [pageSizeOptions]="[12, 24, 48, 96]"
     (page)="updatePagination($event)"

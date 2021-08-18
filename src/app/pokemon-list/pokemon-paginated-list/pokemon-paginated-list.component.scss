@@ -10,3 +10,13 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+mat-paginator {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+.fx-container {
+  display: block;
+  padding-bottom: 70px;
+}

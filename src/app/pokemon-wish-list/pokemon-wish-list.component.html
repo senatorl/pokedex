@@ -2,13 +2,21 @@
   <span>Pokemon wish list</span>
 </mat-toolbar>
 <div *ngIf="pokemonLocalStorageListService.wishList$ | async as pokemonList">
-  <mat-grid-list cols="1" rowHeight="10:1">
-    <section *ngIf="pokemonList.length === 0" class="no-pokemons">
-      <div class="no-pokemons-image"></div>
-      <h2>Your wish list is empty!</h2>
-    </section>
-    <mat-grid-tile *ngFor="let pokemon of pokemonList">
-      <app-pokemon-item [pokemonName]="pokemon"></app-pokemon-item>
-    </mat-grid-tile>
-  </mat-grid-list>
+  <section *ngIf="pokemonList.length === 0" class="no-pokemons">
+    <div class="no-pokemons-image"></div>
+    <h2>Your wish list is empty!</h2>
+  </section>
+  <div class="fx-container">
+    <div
+      fxLayout="column"
+      fxLayout.gt-md="row wrap"
+      fxLayoutAlign="start center"
+      fxLayoutGap.gt-sm="16px grid"
+      fxLayoutGap="16px"
+    >
+      <div fxFlex.gt-sm="25%" fxFlex="100%" *ngFor="let pokemon of pokemonList">
+        <app-pokemon-item [pokemonName]="pokemon"></app-pokemon-item>
+      </div>
+    </div>
+  </div>
 </div>

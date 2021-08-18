@@ -13,5 +13,6 @@ mat-card-header {
 }
 
 :host {
-  flex-basis: 50%;
+  min-width: 320px;
+  display: block;
 }
