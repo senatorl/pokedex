@@ -1,27 +1,51 @@
-# Showpad
+<h1 align="center">Welcome to pokedex (╯°□°)╯︵◓</h1>
+<p align="center">
+<img src="https://user-images.githubusercontent.com/8038137/129953492-fd558985-bd61-44d5-ae7b-ba7fc212bcaa.png">
+</p>
+<p>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.0.
+  <img src="https://img.shields.io/badge/node-16.6.1-blue.svg" />
+  <img src="https://img.shields.io/badge/npm-7.20.3-blue.svg" />
+  <a href="#" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+  </a>
+</p>
 
-## Development server
+> Pokedex is a small webapp based on Angular and PokeAPI. It allows you to search for Pokemon of your interest and keeps track of favorite and caught ones. Was made for recruitment purposes.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### 🏠 [Homepage](http://webaddicts.pl)
 
-## Code scaffolding
+### ✨ [Demo](http://wa-pokedex.herokuapp.com)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Prerequisites
 
-## Build
+- node 16.6.1
+- npm 7.20.3
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Install
 
-## Running unit tests
+```sh
+npm install
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Usage
 
-## Running end-to-end tests
+```sh
+ng serve
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Author
 
-## Further help
+👤 **Łukasz Senator**
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Website: http://webaddicts.pl
+- Github: [@https:\/\/github.com\/senatorl\/](https://github.com/https://github.com/senatorl/)
+- LinkedIn: [@https:\/\/www.linkedin.com\/in\/łukasz-senator-512681b9](https://linkedin.com/in/https://www.linkedin.com/in/łukasz-senator-512681b9)
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+---
+
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
