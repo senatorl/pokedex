@@ -1,0 +1,14 @@
+<mat-toolbar>
+  <span>Pokemon caught list</span>
+</mat-toolbar>
+<div *ngIf="pokemonLocalStorageListService.caughtList$ | async as pokemonList">
+  <mat-grid-list cols="1" rowHeight="10:1">
+    <section *ngIf="pokemonList.length === 0" class="no-pokemons">
+      <div class="no-pokemons-image"></div>
+      <h2>Your caught list is empty! I'm disappointed!</h2>
+    </section>
+    <mat-grid-tile *ngFor="let pokemon of pokemonList">
+      <app-pokemon-item [pokemonName]="pokemon"></app-pokemon-item>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

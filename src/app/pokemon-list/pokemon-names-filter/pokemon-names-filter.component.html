@@ -1,0 +1,21 @@
+<mat-form-field appearance="fill">
+  <mat-label>Pokemon name </mat-label>
+  <input
+    matInput
+    type="text"
+    #input
+    [ngModel]="name"
+    placeholder="Name"
+    (ngModelChange)="nameChanged.next($event)"
+  />
+  <button
+    mat-button
+    *ngIf="input.value"
+    matSuffix
+    mat-icon-button
+    aria-label="Clear"
+    (click)="clearFilter(); input.value = ''"
+  >
+    <mat-icon>close</mat-icon>
+  </button>
+</mat-form-field>

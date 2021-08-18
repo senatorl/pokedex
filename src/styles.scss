@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.no-pokemons {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.no-pokemons-image {
+  background-image: url("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png");
+  width: 296px;
+  height: 296px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

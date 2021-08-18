@@ -1,0 +1,21 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{ pokemon?.name }}</mat-card-title>
+    <mat-card-subtitle>
+      <span *ngFor="let type of pokemon?.types; last as isLast">
+        {{ type.type.name }}<span *ngIf="!isLast">,</span>
+      </span>
+    </mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image [src]="pokemon?.sprites?.front_default" />
+  <mat-card-content>
+    <mat-chip-list class="mat-chip-list-stacked" aria-label="Color selection">
+      <mat-chip *ngFor="let stat of pokemon?.stats">
+        {{ stat.stat.name }}: {{ stat.base_stat }}
+      </mat-chip>
+    </mat-chip-list>
+  </mat-card-content>
+  <mat-card-actions>
+    <app-pokemon-actions [pokemonName]="pokemon?.name"></app-pokemon-actions>
+  </mat-card-actions>
+</mat-card>

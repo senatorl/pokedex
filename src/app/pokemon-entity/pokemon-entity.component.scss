@@ -1,0 +1,11 @@
+mat-card-title {
+  text-transform: capitalize;
+}
+:host {
+  display: flex;
+  justify-content: center;
+}
+mat-card {
+  width: 500px;
+  margin: 30px;
+}

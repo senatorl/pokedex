@@ -1,0 +1,26 @@
+<div *ngIf="pokemonName">
+  <button
+    mat-icon-button
+    (click)="wishButtonClicked(pokemonName)"
+    [matTooltip]="
+      isOnWishList(pokemonName) ? 'Remove from wish list' : 'Add to wish list'
+    "
+  >
+    <mat-icon [color]="isOnWishList(pokemonName) ? 'primary' : 'accent'">{{
+      isOnWishList(pokemonName) ? " favorite" : "favorite_outline"
+    }}</mat-icon>
+  </button>
+  <button
+    mat-icon-button
+    (click)="caughtButtonClicked(pokemonName)"
+    [matTooltip]="
+      isOnCaughtList(pokemonName)
+        ? 'Remove from caught list'
+        : 'Add to caught list'
+    "
+  >
+    <mat-icon [color]="isOnCaughtList(pokemonName) ? 'primary' : 'accent'"
+      >catching_pokemon</mat-icon
+    >
+  </button>
+</div>

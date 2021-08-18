@@ -1,0 +1,11 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title [routerLink]="['/pokemon', pokemonName]">
+      {{ pokemonName }}</mat-card-title
+    >
+  </mat-card-header>
+  <mat-divider></mat-divider>
+  <mat-card-actions>
+    <app-pokemon-actions [pokemonName]="pokemonName"></app-pokemon-actions>
+  </mat-card-actions>
+</mat-card>

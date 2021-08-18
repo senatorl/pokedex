@@ -1,0 +1,17 @@
+mat-card-title {
+  text-transform: capitalize;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+mat-card-actions,
+mat-card-header {
+  justify-content: center;
+  display: flex;
+}
+
+:host {
+  flex-basis: 50%;
+}

@@ -1,0 +1,12 @@
+.no-pokemons {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.no-pokemons-image {
+  background-image: url("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png");
+  width: 296px;
+  height: 296px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
