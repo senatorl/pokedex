@@ -14,6 +14,5 @@ export class PokemonEntityComponent implements OnInit {
 
   ngOnInit(): void {
     this.pokemon = this.route.snapshot.data.pokemon;
-    console.log(this.pokemon, this.route);
   }
 }
